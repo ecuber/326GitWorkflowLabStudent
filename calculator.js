@@ -5,7 +5,7 @@ function calculateSquareRoot(value) {
     if (typeof value !== 'number' || value < 0) {
         return NaN; 
     }
-    
+
     // Return the square root of the value
     return Math.sqrt(value);
 }
