@@ -2,8 +2,12 @@
 
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
+    if (typeof value !== 'number' || value < 0) {
+        return NaN; 
+    }
     
-    // return the square root of the value
+    // Return the square root of the value
+    return Math.sqrt(value);
 }
 
 // TODO: Implement square function
