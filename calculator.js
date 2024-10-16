@@ -22,7 +22,8 @@ function calculateSquare(value) {
 function calculateReciprocal(value) {
     // Hint: Reciprocal is 1/x
     // return the square root of the value
-    return 1* value;
+    if(value === 0) return 0; 
+    return 1/ value;
 
 }
 
