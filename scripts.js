@@ -49,6 +49,46 @@ function runReciprocal() {
 
 // TODO: Implement run your functions here
 
+function runNaturalLog() {
+    const v = naturalLog(display.value);
+    display.value = v;
+}
+
+function runSine() {
+    const v = sine(display.value);
+    display.value = v;
+}
+
+function runCosine() {
+    const v = cosine(display.value);
+    display.value = v;
+}
+
+function runTangent() {
+    const v = tangent(display.value);
+    display.value = v;
+}
+
+let memory = 0;
+function memoryStore() {
+    memory = parseFloat(display.value);
+    document.getElementById('memoryDisplay').value = memory;
+    return memory;
+}
+
+function memoryRecall() {
+    display.value = memory;
+    return memory;
+}
+
+function memoryClear() {
+    memory = 0;
+    document.getElementById('memoryDisplay').value = memory;
+    return memory;
+}
+
+
+
 document.addEventListener('keypress', event => {
     if (event.key === '1') {
         appendToDisplay("1");
@@ -81,3 +121,10 @@ document.addEventListener('keypress', event => {
         appendToDisplay("9");
     }
 })
+
+module.exports = {
+    memory,
+    memoryStore,
+    memoryRecall,
+    memoryClear
+};

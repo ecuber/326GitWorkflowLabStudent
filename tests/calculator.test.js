@@ -1,11 +1,11 @@
 const assert = require('assert');
 const calculator = require('../calculator');
 
-// Test memory functions
-describe('Calculator Memory Functions', function() {
-    
-});
 
+// // Test memory functions
+describe('Calculator Memory Functions', function() {
+
+});
 
 // Test calculation functions
 describe('Calculator Calculation Functions', function() {
@@ -64,4 +64,3 @@ describe('Natural Log Function', function() {
         assert.strictEqual(res, 0);
     });
 });
-

@@ -1,11 +1,9 @@
-
-
 // TODO: Fix the square root function not displaying
 function calculateSquareRoot(value) {
-    if (typeof value !== 'number' || value < 0) {
+    if (value < 0) {
         return NaN; 
     }
-    
+
     // Return the square root of the value
     return Math.sqrt(value);
 }
@@ -22,7 +20,7 @@ function calculateSquare(value) {
 function calculateReciprocal(value) {
     // Hint: Reciprocal is 1/x
     // return the square root of the value
-    return 1* value;
+    return 1/ value;
 
 }
 
