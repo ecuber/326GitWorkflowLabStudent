@@ -15,7 +15,6 @@ describe('Calculator Calculation Functions', function() {
     });
 });
 
-
 // Add your tests here
 // Test Square function
 describe('Square Function', function() {
